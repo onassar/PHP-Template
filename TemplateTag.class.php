@@ -6,7 +6,8 @@
      * The parent, abstract, class of a templateable tag. It presents a <render>
      * method 
      * 
-     * @author Oliver Nassar <onassar@gmail.com>
+     * @author   Oliver Nassar <onassar@gmail.com>
+     * @abstract
      */
     abstract class TemplateTag
     {
