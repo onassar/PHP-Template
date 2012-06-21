@@ -35,6 +35,26 @@ application's buffer before it is flushed to the user) which contains a tag.
 That string is passed through the rendered, and the string 'Hello World!' is
 put it's place.
 
+### Creating Tags
+The power from this library comes most readily from creating your own tags. As
+can be seen by browsing the
+[HelloWorldTag.class.php](https://github.com/onassar/PHP-Template/blob/master/HelloWorldTag.class.php)
+file, the process for defining your own `TemplateTag` child class is pretty
+straightforward.
+
+You begin by defining the the `$_patterns` array, supplying a key and a regular
+expression. Beyond that, there is really only the `replacement` method.
+
+This method accepts three parameters:
+
+ * `$type`
+ The key of the pattern that was matched
+ * `$matches` An array of matched backreferences from the string, against the
+ pattern
+ * `$tag` The matching tag, in full.
+
+I'll try and get a more robust tag example up soon.
+
 ### Purpose
 The plugin architecture for my MVC framework
 [TurtlePHP](https://github.com/onassar/TurtlePHP) is such that you can capture
