@@ -48,7 +48,8 @@ For example:
 
 I could then create a `TwilioConnect` tag that would use the
 [TurtlePHP-TemplatePlugin](https://github.com/onassar/TurtlePHP-TemplatePlugin)
-to automatically insert the approriate code. Something like this:
+to automatically insert the approriate code. The code generally looks something
+like this:
 
     <style type="text/css">
     	#twilio-connect-button {
