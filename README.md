@@ -46,9 +46,9 @@ much easier if I could add in custom tags.
 
 For example:
 ```html
-    <a href="#">some random markup</a>
-    <twilio-connect app-id="jkdfhgrnd23rf" />
-    Some more markup
+<a href="#">some random markup</a>
+<twilio-connect app-id="jkdfhgrnd23rf" />
+Some more markup
 ```
 
 I could then create a `TwilioConnect` tag that would use the
@@ -57,14 +57,14 @@ to automatically insert the approriate code. The code generally looks something
 like this:
 
 ```html
-    <style type="text/css">
-    	#twilio-connect-button {
-    		background: url(https://www.twilio.com/packages/connect-apps/images/connect-button.png);
-    		width: 130px; height: 34px; display: block;	margin: 0 auto;
-    	}
-    	#twilio-connect-button:hover { background-position: 0 34px; }
-    </style>
-    <a href="https://www.twilio.com/authorize/CN0229f4df9b25a726608d68ea78048d5f" id="twilio-connect-button"></a>
+<style type="text/css">
+	#twilio-connect-button {
+		background: url(https://www.twilio.com/packages/connect-apps/images/connect-button.png);
+		width: 130px; height: 34px; display: block;	margin: 0 auto;
+	}
+	#twilio-connect-button:hover { background-position: 0 34px; }
+</style>
+<a href="https://www.twilio.com/authorize/CN0229f4df9b25a726608d68ea78048d5f" id="twilio-connect-button"></a>
 ```
 
 This is the code the Twilio generates and requires you to use when
