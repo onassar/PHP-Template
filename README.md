@@ -53,6 +53,9 @@ This method accepts three parameters:
  pattern
  * `$tag` The matching tag, in full.
 
+From here, to have these tags rendered through the `Template` classes `render`
+method, you make a call to the `Template::addTag` method.
+
 I'll try and get a more robust tag example up soon.
 
 ### Purpose
