@@ -42,8 +42,8 @@ can be seen by browsing the
 file, the process for defining your own `TemplateTag` child class is pretty
 straightforward.
 
-You begin by defining the the `$_patterns` array, supplying a key and a regular
-expression. Beyond that, there is really only the `replacement` method.
+You begin by defining the `$_patterns` array, supplying keys and regular
+expressions. Beyond that, there is really only the `replacement` method.
 
 This method accepts three parameters:
 
