@@ -62,3 +62,7 @@ like this:
 
 This is the code the Twilio generates and requires you to use when
 authenticating users via their Twilio account.
+
+The `HelloWorldTag` class is meant to serve as a really *basic* example. I'll
+put up a more robust sample tag when I can that shows the matching of attributes
+in a sample tag.
