@@ -6,6 +6,8 @@ string through a rendering engine, and have custom-tags converted through
 programtic means.
 
 ### Quick Example
+``` php
+<?php
 
     // includes
     require_once APP . '/vendors/PHP-Template/Template.class.php';
@@ -18,6 +20,8 @@ programtic means.
     // render text
     $str = '<hw />';
     echo Template::render($str);
+
+```
 
 This example is pretty basic. It loads the `Template` abstract class,
 `TemplateTag` abstract class (which cannot be accessed statically; rather acts
@@ -45,7 +49,6 @@ For example:
     <a href="#">some random markup</a>
     <twilio-connect app-id="jkdfhgrnd23rf" />
     Some more markup
-
 ```
 
 I could then create a `TwilioConnect` tag that would use the
@@ -62,7 +65,6 @@ like this:
     	#twilio-connect-button:hover { background-position: 0 34px; }
     </style>
     <a href="https://www.twilio.com/authorize/CN0229f4df9b25a726608d68ea78048d5f" id="twilio-connect-button"></a>
-
 ```
 
 This is the code the Twilio generates and requires you to use when
